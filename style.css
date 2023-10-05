@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Bodoni", serif;
+  height: 10000px;
+}
+body a {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav .container {
+  display: grid;
+  grid-template-columns: max-content 60% max-content max-content;
+  grid-template-areas: "navbar-brand navigation-link trying-app register-form";
+  gap: 25px;
+  border: 2px solid lightgray;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .navbar-brand {
+  margin-left: 5px;
+}
+nav .container ul {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: start;
+}
+nav .container ul li {
+  display: inline;
+  margin-left: 20px;
+  color: #000000;
+}
+nav .container ul li span {
+  color: #ff764d;
+}
+nav .container .trying-app span {
+  color: #0000ff;
+}
+nav .container .register-form {
+  font-size: 0.9em;
+}
+
+.navigation-page {
+  font-size: 0.9em;
+}
+.navigation-page ul {
+  margin-top: 25px;
+  margin-left: 60px;
+}
+.navigation-page ul li {
+  display: inline;
+  margin-left: 25px;
+}
+.navigation-page ul li span {
+  color: #ff764d;
+}
+
+#hero {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff764d;
+  height: 600px;
+  background: url(img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding: 0;
+}
+#hero h1 {
+  font-size: 8em;
+  font-weight: 700;
+}
+
+#about {
+  margin-top: 150px;
+}
+#about article {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: "column-1 column-2 column-3";
+}
+#about article p {
+  font-size: 1.6em;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+#about article p span {
+  color: #0000ff;
+}
+#about article .second-paragraph {
+  font-size: 1em;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+#about .container {
+  margin-top: 150px;
+}
+#about .container .box {
+  position: absolute;
+  width: 55%;
+  height: 900px;
+  right: 0;
+  background-color: #fbffa7;
+  z-index: -1;
+}
+#about .container .image-section {
+  position: relative;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+#about .container .image-section .ableton-1 {
+  position: relative;
+}
+#about .container .image-section .ableton-2 {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

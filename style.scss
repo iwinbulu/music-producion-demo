@@ -1,0 +1,142 @@
+// Colors
+$primaryColor: #fbffa7;
+$secondaryColor: #b1c5ff;
+$tertiaryColor: #b6ffc0;
+$quaternaryColor: #ff764d;
+$quinaryColor: #d5b3ff;
+$textColor: #000000;
+$linkColor: #0000ff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Bodoni", serif;
+  height: 10000px;
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+nav {
+  .container {
+    display: grid;
+    grid-template-columns: max-content 60% max-content max-content;
+    grid-template-areas: "navbar-brand navigation-link trying-app register-form";
+    gap: 25px;
+    border: 2px solid lightgray;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    .navbar-brand {
+      margin-left: 5px;
+    }
+    ul {
+      font-size: 1.1em;
+      display: flex;
+      justify-content: start;
+      li {
+        display: inline;
+        margin-left: 20px;
+        color: $textColor;
+
+        span {
+          color: $quaternaryColor;
+        }
+      }
+    }
+    .trying-app {
+      span {
+        color: $linkColor;
+      }
+    }
+    .register-form {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.navigation-page {
+  font-size: 0.9em;
+  ul {
+    margin-top: 25px;
+    margin-left: 60px;
+
+    li {
+      display: inline;
+      margin-left: 25px;
+      span {
+        color: $quaternaryColor;
+      }
+    }
+  }
+}
+#hero {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $quaternaryColor;
+  height: 600px;
+  background: url(img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding: 0;
+  h1 {
+    font-size: 8em;
+    font-weight: 700;
+  }
+}
+
+#about {
+  margin-top: 150px;
+  article {
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "column-1 column-2 column-3";
+    p {
+      font-size: 1.6em;
+      word-spacing: 2px;
+      letter-spacing: 0.5px;
+      span {
+        color: $linkColor;
+      }
+    }
+    .second-paragraph {
+      font-size: 1em;
+      word-spacing: 2px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+  }
+
+  .container {
+    margin-top: 150px;
+    .box {
+      position: absolute;
+      width: 55%;
+      height: 900px;
+      right: 0;
+      background-color: $primaryColor;
+      z-index: -1;
+    }
+    .image-section {
+      position: relative;
+      width: 90%;
+      display: inline-flex;
+      justify-content: space-around;
+      .ableton-1 {
+        position: relative;
+      }
+      .ableton-2 {
+        position: relative;
+      }
+    }
+  }
+}
