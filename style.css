@@ -78,11 +78,8 @@ nav .container .register-form {
   font-weight: 700;
 }
 
-#about {
-  margin-top: 150px;
-}
 #about article {
-  margin: 0 auto;
+  margin: 150px auto;
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -103,25 +100,20 @@ nav .container .register-form {
   font-weight: 400;
 }
 #about .container {
-  margin-top: 150px;
-}
-#about .container .box {
   position: absolute;
-  width: 55%;
-  height: 900px;
-  right: 0;
+  width: 59%;
+  height: 600px;
   background-color: #fbffa7;
-  z-index: -1;
+  right: 0;
+  display: flex;
+  flex-direction: row;
 }
-#about .container .image-section {
+#about .image-container {
   position: relative;
-  width: 90%;
-  display: inline-flex;
-  justify-content: space-around;
-}
-#about .container .image-section .ableton-1 {
-  position: relative;
-}
-#about .container .image-section .ableton-2 {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 600px;
+  align-items: center;
+  margin-top: 150px;
 }/*# sourceMappingURL=style.css.map */
