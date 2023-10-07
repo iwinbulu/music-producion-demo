@@ -13,7 +13,7 @@ $linkColor: #0000ff;
 }
 
 body {
-  font-family: "Libre Bodoni", serif;
+  font-family: "PT Sans", sans-serif;
   height: 10000px;
   a {
     text-decoration: none;
@@ -35,14 +35,16 @@ nav {
       margin-left: 5px;
     }
     ul {
-      font-size: 1.1em;
+      font-size: 1.2em;
       display: flex;
       justify-content: start;
       li {
         display: inline;
-        margin-left: 20px;
-        color: $textColor;
-
+        margin-left: 35px;
+        font-weight: 700;
+        a {
+          color: $textColor;
+        }
         span {
           color: $quaternaryColor;
         }
@@ -51,16 +53,22 @@ nav {
     .trying-app {
       span {
         color: $linkColor;
+        font-size: 1.1em;
+        font-weight: 700;
       }
     }
     .register-form {
       font-size: 0.9em;
+      font-weight: 700;
+      a {
+        color: $textColor;
+      }
     }
   }
 }
 
 .navigation-page {
-  font-size: 0.9em;
+  font-size: 1em;
   ul {
     margin-top: 25px;
     margin-left: 60px;
@@ -68,12 +76,17 @@ nav {
     li {
       display: inline;
       margin-left: 25px;
+      font-weight: 700;
+      a {
+        color: $textColor;
+      }
       span {
         color: $quaternaryColor;
       }
     }
   }
 }
+
 #hero {
   position: relative;
   margin-top: 10px;
@@ -92,46 +105,142 @@ nav {
   }
 }
 
+figcaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-top: -35px;
+  color: $quaternaryColor;
+  text-shadow: 1px -0.5px black;
+  font-size: 0.8em;
+}
+
 #about {
   article {
     margin: 150px auto;
     width: 70%;
+
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: "column-1 column-2 column-3";
     p {
-      font-size: 1.6em;
-      word-spacing: 2px;
-      letter-spacing: 0.5px;
+      font-size: 1.8em;
+      font-weight: 700;
+
       span {
         color: $linkColor;
       }
     }
     .second-paragraph {
-      font-size: 1em;
-      word-spacing: 2px;
-      letter-spacing: 0.5px;
-      font-weight: 400;
+      font-size: 1.1em;
+      line-height: 1.8em;
+      word-spacing: 0.1ch;
+      letter-spacing: 0.1px;
+      font-weight: normal;
     }
   }
 
-  .container {
+  .bg-yellow {
     position: absolute;
     width: 59%;
-    height: 600px;
+    height: 700px;
     background-color: $primaryColor;
     right: 0;
-    display: flex;
-    flex-direction: row;
   }
-
-  .image-container {
+  figure {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 600px;
+    height: 700px;
     align-items: center;
-    margin-top: 150px;
+    .ableton-6 {
+      margin: 150px auto;
+    }
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -150px auto;
+    figcaption {
+      margin-top: -100px;
+      margin-left: -500px;
+      color: $textColor;
+      text-shadow: none;
+      font-size: 0.9em;
+    }
+  }
+
+  .bg-green {
+    position: absolute;
+    width: 59%;
+    height: 1000px;
+    background-color: $tertiaryColor;
+  }
+  .bg-green-col {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: "fig-1 fig-2";
+    .fig-1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 1000px;
+      align-items: center;
+    }
+    .fig-2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 1000px;
+      align-items: center;
+    }
+  }
+
+  .bg-purple {
+    position: absolute;
+    width: 60%;
+    height: 700px;
+    background-color: $quinaryColor;
+    left: 20%;
+  }
+  figure {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 700px;
+    align-items: center;
+  }
+  .card {
+    height: 550px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 45%;
+      height: 550px;
+    }
+    .container {
+      background-color: $secondaryColor;
+      width: 45%;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        font-size: 1.6em;
+        font-weight: 700;
+        margin: 10px 100px;
+        line-height: 1.8;
+      }
+    }
   }
 }
