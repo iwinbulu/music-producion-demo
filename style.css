@@ -5,7 +5,6 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  height: 10000px;
 }
 body a {
   text-decoration: none;
@@ -17,7 +16,7 @@ nav .container {
   grid-template-columns: max-content 60% max-content max-content;
   grid-template-areas: "navbar-brand navigation-link trying-app register-form";
   gap: 25px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   height: 60px;
   justify-content: center;
   align-items: center;
@@ -197,21 +196,22 @@ figcaption {
   align-items: center;
 }
 #about .card {
-  height: 550px;
+  height: 450px;
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 100px;
 }
 #about .card img {
   width: 45%;
-  height: 550px;
+  height: 450px;
 }
 #about .card .container {
   background-color: #b1c5ff;
   width: 45%;
-  height: 550px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,4 +221,125 @@ figcaption {
   font-weight: 700;
   margin: 10px 100px;
   line-height: 1.8;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1.2px solid lightgray;
+}
+footer .main-container {
+  width: 82%;
+  margin: 100px auto;
+}
+footer .main-container .brand-container {
+  font-size: 2.4em;
+}
+footer .main-container .navigation-container {
+  display: grid;
+  grid-template-columns: 3.5fr auto 6fr;
+  grid-template-areas: ".container-1 .container-2 .container-3";
+  gap: 1rem;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  word-spacing: 0.1ch;
+  letter-spacing: 0.1px;
+  font-weight: normal;
+}
+footer .main-container .navigation-container h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+footer .main-container .navigation-container ul {
+  text-decoration: none;
+  list-style: none;
+}
+footer .main-container .navigation-container ul li a {
+  color: #000000;
+}
+footer .main-container .navigation-container i {
+  padding-top: 25px;
+  padding-right: 5px;
+}
+footer .main-container .navigation-container .content-nav {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+footer .main-container .navigation-container .selection-form {
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+}
+footer .main-container .navigation-container .selection-form .language-picker__form select {
+  width: 125px;
+  height: 35px;
+  padding: 5px;
+  background-color: lightgrey;
+  border: none;
+  margin-right: 2px;
+  font-family: "PT Sans", sans-serif;
+}
+footer .main-container .navigation-container .selection-form .geolocation select {
+  width: 175px;
+  height: 35px;
+  padding: 5px;
+  background-color: lightgrey;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+}
+footer .main-container .navigation-container .newsletter .subscription-box {
+  display: flex;
+  margin-top: 15px;
+}
+footer .main-container .navigation-container .newsletter .subscription-box input {
+  width: 275px;
+  height: 35px;
+  padding: 5px;
+  background-color: lightgrey;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+}
+footer .main-container .navigation-container .newsletter .subscription-box button {
+  width: 125px;
+  height: 45px;
+  padding: 5px;
+  color: white;
+  background-color: #0000ff;
+  border: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+footer .main-container .foot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px auto;
+}
+footer .main-container .foot-container .resources {
+  width: 50%;
+}
+footer .main-container .foot-container .resources ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main-container .foot-container .resources li {
+  display: inline;
+  font-size: 0.8em;
+}
+footer .main-container .foot-container .resources li a {
+  color: #000000;
+}
+footer .main-container .foot-container .foot-brand {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8em;
+}
+footer .main-container .foot-container .foot-brand h2 {
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
