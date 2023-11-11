@@ -21,68 +21,76 @@ nav .container {
   justify-content: center;
   align-items: center;
 }
+
 nav .container .navbar-brand {
   margin-left: 5px;
 }
+
 nav .container ul {
   font-size: 1.2em;
   display: flex;
   justify-content: start;
 }
+
 nav .container ul li {
   display: inline;
   margin-left: 35px;
   font-weight: 700;
 }
+
 nav .container ul li a {
   color: #000000;
 }
+
 nav .container ul li span {
   color: #ff764d;
 }
+
 nav .container .trying-app span {
   color: #0000ff;
   font-size: 1.1em;
   font-weight: 700;
 }
+
 nav .container .register-form {
   font-size: 0.9em;
   font-weight: 700;
-}
-nav .container .register-form a {
-  color: #000000;
 }
 
 .navigation-page {
   display: block;
   font-size: 1em;
 }
+
 .navigation-page ul {
   margin-top: 25px;
   margin-left: 60px;
 }
+
 .navigation-page ul li {
   display: inline;
   margin-left: 25px;
   font-weight: 700;
   line-height: 50%;
 }
+
 .navigation-page ul li a {
   color: #000000;
 }
+
 .navigation-page ul li span {
   color: #ff764d;
 }
 
-.navbar-scrolled {
-  background-color: white;
-  opacity: 0.8;
+.scrolled {
+  position: fixed;
+  height: 75px;
   top: 0;
   left: 0;
-  position: sticky;
-  transition: 0.3s;
-  height: 50px;
-  z-index: 1;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.9s ease-in-out;
 }
 
 #hero {
